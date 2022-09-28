@@ -21,7 +21,7 @@ class EpController extends Controller {
   async newEps() {
     const ctx = this.ctx;
 
-    ctx.body = await ctx.model.NewEp.findAll({ limit: 1 });
+    ctx.body = await ctx.model.NewEp.findAll();
   }
 }
 
